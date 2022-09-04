@@ -6,7 +6,7 @@
 
   <groupId>com.lswebworld</groupId>
   <artifactId>nfl-stats-data</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>nfl-stats-data</name>
   
@@ -265,4 +265,11 @@
       </plugin>
     </plugins>
   </reporting>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/runstache/java-nfl-stats-data</url>
+    </repository>
+  </distributionManagement>
 </project>
