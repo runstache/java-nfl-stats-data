@@ -64,6 +64,6 @@ public class Schedule {
 
   @Column(name = "is_home", nullable = false)
   @JsonProperty("HomeGame")
-  private Boolean homeGame;
+  private boolean homeGame;
 
 }
