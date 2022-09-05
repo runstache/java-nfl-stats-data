@@ -34,7 +34,7 @@ public class Statistic {
 
   @Column(name = "statistic_code_id", nullable = false)
   @JsonProperty("statisticCodeId")
-  private int statisticCodeId;
+  private long statisticCodeId;
 
   @Column(name = "player_id")
   @JsonProperty("playerId")
