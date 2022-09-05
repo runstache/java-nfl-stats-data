@@ -40,11 +40,11 @@ public class Statistic {
 
   @Column(name = "player_id")
   @JsonProperty("playerId")
-  private long playerId;
+  private Long playerId;
 
   @Column(name = "team_id")
   @JsonProperty("teamId")
-  private int teamId;
+  private Integer teamId;
 
   @Column(name = "schedule_id", nullable = false)
   @JsonProperty("scheduleId")
