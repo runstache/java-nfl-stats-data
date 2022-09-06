@@ -19,11 +19,11 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ScheduleModel {
 
-  @JsonProperty("teamCode")
-  private String teamCode;
+  @JsonProperty("teamUrl")
+  private String teamUrl;
 
-  @JsonProperty("opponentCode")
-  private String opponentCode;
+  @JsonProperty("opponentUrl")
+  private String opponentUrl;
 
   @JsonProperty("year")
   private int year;
