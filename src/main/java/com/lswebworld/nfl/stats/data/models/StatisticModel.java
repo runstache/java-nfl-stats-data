@@ -29,11 +29,17 @@ public class StatisticModel {
   @JsonProperty("teamCode")
   private String teamCode;
 
+  @JsonProperty("teamId")
+  private int teamId;
+
   @JsonProperty("value")
   private double value;
 
   @JsonProperty("gameId")
   private long gameId;
+
+  @JsonProperty("scheduleId")
+  private long scheduleId;
 
   @JsonProperty("categoryCode")
   private String categoryCode;
