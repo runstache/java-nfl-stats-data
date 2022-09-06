@@ -5,11 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.lswebworld.nfl.stats.data.serialization.LocalDateDeserializer;
-import com.lswebworld.nfl.stats.data.serialization.LocalDateSerializer;
-import java.time.LocalDate;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -48,15 +43,8 @@ public class Player {
   @JsonProperty("name")
   private String name;
 
-  @Column(name = "dob")
-  @JsonProperty("dob")
-  @JsonSerialize(using = LocalDateSerializer.class)
-  @JsonDeserialize(using = LocalDateDeserializer.class)
-  private LocalDate dob;
-
   @Column(name = "position_id", nullable = false)
   @JsonProperty("positionId")
   private int positionId;
-
 
 }
