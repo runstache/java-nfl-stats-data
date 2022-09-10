@@ -26,9 +26,6 @@ public class StatisticModel {
   @JsonProperty("playerUrl")
   private String playerUrl;
 
-  @JsonProperty("teamCode")
-  private String teamCode;
-
   @JsonProperty("teamId")
   private int teamId;
 
